@@ -1,6 +1,7 @@
 public class Driver {
 
    private String name;
+   private String licenseNumber;
         
    public Driver(String name){
       this.name = name;
@@ -11,7 +12,7 @@ public class Driver {
    }
    
    public String toString(){
-         return name;
+         return name + ", " + licenseNumber;
    }
 
 }
