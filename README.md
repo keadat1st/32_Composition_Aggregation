@@ -1,4 +1,4 @@
-# Composition Aggregation
+# Composition & Aggregation
 Agenda 19-04-2018
 
 * [Slides](https://github.com/dat18v2/32_Composition_Aggregation/blob/master/Composition%20%26%20Aggregation.pdf)
