@@ -1,11 +1,11 @@
 public class GTA {
+ 
+   private static Driver driver = new Driver("Kenneth");
+   private static Car bmw = new Car(driver);
 
    public static void main(String[] args){
-   
-      Car bmw = new Car();
+
       System.out.println(bmw.getDriver());
-      
-      
       
       
       
