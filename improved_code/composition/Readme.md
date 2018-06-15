@@ -10,7 +10,7 @@ Lets take example of Library.
 > Java program to illustrate the concept of Composition.    
 
 ```` 
-class Book 
+public class Book 
 {
     public String title;
     public String author;
@@ -26,7 +26,7 @@ class Book
 ````    
 import java.util.*;
 
-class Library 
+public class Library 
 {
  
     // The books in the Library.
@@ -36,8 +36,7 @@ class Library
        books.add(book);
     }
      
-    public ArrayList<Book> getTotalBooksInLibrary(){
-         
+    public ArrayList<Book> getTotalBooksInLibrary(){      
        return books;  
     }
      
