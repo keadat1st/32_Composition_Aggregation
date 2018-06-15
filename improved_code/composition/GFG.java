@@ -13,16 +13,13 @@ class GFG
         Book b2 = new Book("Thinking in Java", "Bruce Eckel");
         Book b3 = new Book("Java: The Complete Reference", "Herbert Schildt");
          
-        // Creating the list which contains the 
-        // no. of books.
-        List<Book> books = new ArrayList<Book>();
-        books.add(b1);
-        books.add(b2);
-        books.add(b3);
+        // Creating a Library and adding the 3 books to it.
+        Library library = new Library();
+        library.addBook(b1);
+        library.addBook(b2);
+        library.addBook(b3);
          
-        Library library = new Library(books);
-         
-        List<Book> bks = library.getTotalBooksInLibrary();
+        ArrayList<Book> bks = library.getTotalBooksInLibrary();
         for(Book bk : bks){
              
             System.out.println("Title : " + bk.title + " and "
