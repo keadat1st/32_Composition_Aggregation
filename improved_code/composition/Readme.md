@@ -8,7 +8,6 @@ When there is a composition between two entities, the composed object cannot exi
 Lets take example of Library.    
 
 > Java program to illustrate the concept of Composition.    
-> Consists of classes: Book, Library & GFG
 
 ```` 
 class Book 
