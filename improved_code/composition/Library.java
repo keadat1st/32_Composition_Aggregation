@@ -7,7 +7,7 @@ import java.util.*;
 class Library 
 {
  
-    // reference to refer to list of books.
+    // The books in the Library.
     private ArrayList<Book> books;
     
     public void addBook(Book book){
