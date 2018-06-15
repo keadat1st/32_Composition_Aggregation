@@ -1,7 +1,6 @@
 public class Car {
 
       private Driver driver;
-      //private Driver[] drivers;
       private Engine engine;
       
       public Car(Driver driver){
@@ -12,22 +11,12 @@ public class Car {
          // Aggregation
          this.driver = driver;
       
-         // Assosiation
-        // driver = new Driver("Claus");
-         
-        /* drivers = new Driver[3];
-         drivers[0] = new Driver("Jonatan");
-         drivers[1] = new Driver("Pia");*/
-  
+         // Assosiation (and Composition)
+         // this.driver = new Driver("Claus");
+            
       }
-      
-      
+       
       public Driver getDriver(){
          return driver;
       }
-      
-     /* public Driver[] getDrivers(){
-         return drivers;
-      }*/
-
 }
