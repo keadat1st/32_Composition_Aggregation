@@ -6,6 +6,10 @@ Agenda 19-04-2018
 * [Øvelse](https://docs.google.com/document/d/1Hu1bYa9dv3irxtF4Y-lPhBdqRlvX4Tzoc2pvYMdy_00/pub)
 
 
+## Literature
+* [Association, Composition and Aggregation in Java](https://www.geeksforgeeks.org/association-composition-aggregation-java/)
+  * [Improved code from example](/improved_code)
+
 
 
 
