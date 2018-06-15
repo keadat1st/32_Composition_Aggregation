@@ -34,12 +34,11 @@ import java.util.*;
 class Library 
 {
  
-    // reference to refer to list of books.
-    private final List<Book> books;
-     
-    Library (ArrayList<Book> books)
-    {
-        this.books = books; 
+    // The books in the Library.
+    private ArrayList<Book> books;
+    
+    public void addBook(Book book){
+       books.add(book);
     }
      
     public ArrayList<Book> getTotalBooksInLibrary(){
