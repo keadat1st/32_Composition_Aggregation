@@ -7,12 +7,10 @@ In composition, both the entities are dependent on each other.
 When there is a composition between two entities, the composed object cannot exist without the other entity.    
 Lets take example of Library.    
 
-> Java program to illustrate the concept of Composition.   
+> Java program to illustrate the concept of Composition.    
+> Consists of classes: Book, Library & GFG
 
 ```` 
-
-import java.util.*;
-
 class Book 
 {
  
@@ -26,31 +24,39 @@ class Book
         this.author = author;
     }
 }
-
 ````    
 
-
+````    
 // Libary class contains 
 // list of books.
+
+import java.util.*;
+
 class Library 
 {
  
     // reference to refer to list of books.
     private final List<Book> books;
      
-    Library (List<Book> books)
+    Library (ArrayList<Book> books)
     {
         this.books = books; 
     }
      
-    public List<Book> getTotalBooksInLibrary(){
+    public ArrayList<Book> getTotalBooksInLibrary(){
          
        return books;  
     }
      
 }
- 
+
+````    
+
+````    
 // main method
+
+import java.util.*;
+
 class GFG 
 {
     public static void main (String[] args) 
@@ -63,14 +69,14 @@ class GFG
          
         // Creating the list which contains the 
         // no. of books.
-        List<Book> books = new ArrayList<Book>();
+        ArrayList<Book> books = new ArrayList<Book>();
         books.add(b1);
         books.add(b2);
         books.add(b3);
          
         Library library = new Library(books);
          
-        List<Book> bks = library.getTotalBooksInLibrary();
+        ArrayList<Book> bks = library.getTotalBooksInLibrary();
         for(Book bk : bks){
              
             System.out.println("Title : " + bk.title + " and "
@@ -78,10 +84,13 @@ class GFG
         }
     }
 }
-Run on IDE
-Output
+````    
 
+Output
+````    
 Title : EffectiveJ Java and  Author : Joshua Bloch
 Title : Thinking in Java and  Author : Bruce Eckel
 Title : Java: The Complete Reference and  Author : Herbert Schildt
+````    
+
 In above example a library can have no. of books on same or different subjects. So, If Library gets destroyed then All books within that particular library will be destroyed. i.e. book can not exist without library. That’s why it is composition.
