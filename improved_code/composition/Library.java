@@ -8,14 +8,13 @@ class Library
 {
  
     // reference to refer to list of books.
-    private final List<Book> books;
-     
-    Library (List<Book> books)
-    {
-        this.books = books; 
+    private ArrayList<Book> books;
+    
+    public void addBook(Book book){
+       books.add(book);
     }
      
-    public List<Book> getTotalBooksInLibrary(){
+    public ArrayList<Book> getTotalBooksInLibrary(){
          
        return books;  
     }
