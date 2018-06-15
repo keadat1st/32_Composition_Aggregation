@@ -46,25 +46,20 @@ class Library
 ````    
 
 ````    
-class GFG 
+public class GFG 
 {
     public static void main (String[] args) 
-    {
-         
-        // Creating 3 new books
-        Book b1 = new Book("EffectiveJ Java", "Joshua Bloch");
-        Book b2 = new Book("Thinking in Java", "Bruce Eckel");
-        Book b3 = new Book("Java: The Complete Reference", "Herbert Schildt");
-         
-        // Creating a Library (new Library()) and adding the 3 books to it.
+    {    
+        // Creating a Library
         Library library = new Library();
-        library.addBook(b1);
-        library.addBook(b2);
-        library.addBook(b3);
+     
+        // Adding 3 books to the library.
+        library.addBook(new Book("EffectiveJ Java", "Joshua Bloch"));
+        library.addBook(new Book("Thinking in Java", "Bruce Eckel"));
+        library.addBook(new Book("Java: The Complete Reference", "Herbert Schildt"));
          
         ArrayList<Book> bks = library.getTotalBooksInLibrary();
-        for(Book bk : bks){
-             
+        for(Book bk : bks){        
             System.out.println("Title : " + bk.title + " and "
             +" Author : " + bk.author);
         }
