@@ -12,13 +12,11 @@ Lets take example of Library.
 ```` 
 class Book 
 {
- 
     public String title;
     public String author;
      
     Book(String title, String author)
-    {
-         
+    {      
         this.title = title;
         this.author = author;
     }
@@ -26,9 +24,6 @@ class Book
 ````    
 
 ````    
-// Libary class contains 
-// list of books.
-
 import java.util.*;
 
 class Library 
@@ -51,28 +46,21 @@ class Library
 ````    
 
 ````    
-// main method
-
-import java.util.*;
-
 class GFG 
 {
     public static void main (String[] args) 
     {
          
-        // Creating the Objects of Book class.
+        // Creating 3 new books
         Book b1 = new Book("EffectiveJ Java", "Joshua Bloch");
         Book b2 = new Book("Thinking in Java", "Bruce Eckel");
         Book b3 = new Book("Java: The Complete Reference", "Herbert Schildt");
          
-        // Creating the list which contains the 
-        // no. of books.
-        ArrayList<Book> books = new ArrayList<Book>();
-        books.add(b1);
-        books.add(b2);
-        books.add(b3);
-         
-        Library library = new Library(books);
+        // Creating a Library (new Library()) and adding the 3 books to it.
+        Library library = new Library();
+        library.addBook(b1);
+        library.addBook(b2);
+        library.addBook(b3);
          
         ArrayList<Book> bks = library.getTotalBooksInLibrary();
         for(Book bk : bks){
